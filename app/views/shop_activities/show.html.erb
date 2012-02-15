@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Av shop:</b>
+  <%= @shop_activity.av_shop_id %>
+</p>
+
+<p>
+  <b>Av actvty:</b>
+  <%= @shop_activity.av_actvty_id %>
+</p>
+
+<p>
+  <b>Av os:</b>
+  <%= @shop_activity.av_os_id %>
+</p>
+
+<p>
+  <b>Av service:</b>
+  <%= @shop_activity.av_service_id %>
+</p>
+
+<p>
+  <b>Av remarks:</b>
+  <%= @shop_activity.av_remarks %>
+</p>
+
+<p>
+  <b>Av create from:</b>
+  <%= @shop_activity.av_create_from %>
+</p>
+
+<p>
+  <b>Av create date:</b>
+  <%= @shop_activity.av_create_date %>
+</p>
+
+<p>
+  <b>Av create by:</b>
+  <%= @shop_activity.av_create_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_shop_activity_path(@shop_activity) %> |
+<%= link_to 'Back', shop_activities_path %>

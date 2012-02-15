@@ -1,0 +1,197 @@
+<%= form_for(@product) do |f| %>
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% @product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pr_id %><br />
+    <%= f.text_field :pr_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_cd %><br />
+    <%= f.text_field :pr_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_number %><br />
+    <%= f.number_field :pr_number %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_brand_cd %><br />
+    <%= f.text_field :pr_brand_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_brand_name %><br />
+    <%= f.text_field :pr_brand_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_os %><br />
+    <%= f.text_field :pr_os %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_os_version %><br />
+    <%= f.number_field :pr_os_version %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_os_ver_date %><br />
+    <%= f.date_select :pr_os_ver_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_os_ver_name %><br />
+    <%= f.text_field :pr_os_ver_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_model_specs %><br />
+    <%= f.text_field :pr_model_specs %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_base_model_flg %><br />
+    <%= f.text_field :pr_base_model_flg %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_manufactr_cd %><br />
+    <%= f.text_field :pr_manufactr_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_height %><br />
+    <%= f.text_field :pr_height %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_height_type %><br />
+    <%= f.text_field :pr_height_type %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_width %><br />
+    <%= f.text_field :pr_width %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_width_type %><br />
+    <%= f.text_field :pr_width_type %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_thick %><br />
+    <%= f.text_field :pr_thick %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_thick_type %><br />
+    <%= f.text_field :pr_thick_type %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_weight %><br />
+    <%= f.text_field :pr_weight %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_weight_type %><br />
+    <%= f.text_field :pr_weight_type %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_ram %><br />
+    <%= f.text_field :pr_ram %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_ram_type %><br />
+    <%= f.text_field :pr_ram_type %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_cpu_model %><br />
+    <%= f.text_field :pr_cpu_model %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_camera_flg %><br />
+    <%= f.check_box :pr_camera_flg %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_camera_desc %><br />
+    <%= f.text_area :pr_camera_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_battery_pow %><br />
+    <%= f.text_field :pr_battery_pow %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_gps_flg %><br />
+    <%= f.check_box :pr_gps_flg %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_wifi_type %><br />
+    <%= f.text_field :pr_wifi_type %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_bluetooth_flg %><br />
+    <%= f.check_box :pr_bluetooth_flg %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_short_desc %><br />
+    <%= f.text_field :pr_short_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_long_desc %><br />
+    <%= f.text_area :pr_long_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_group_cd %><br />
+    <%= f.text_field :pr_group_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_applicability_cd %><br />
+    <%= f.text_field :pr_applicability_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_distributor_cd %><br />
+    <%= f.number_field :pr_distributor_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_product_stat_flg %><br />
+    <%= f.text_field :pr_product_stat_flg %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_record_stat_flg %><br />
+    <%= f.text_field :pr_record_stat_flg %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_del_flg %><br />
+    <%= f.text_field :pr_del_flg %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_create_from %><br />
+    <%= f.text_field :pr_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_effect_date %><br />
+    <%= f.date_select :pr_effect_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_create_date %><br />
+    <%= f.date_select :pr_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_modify_date %><br />
+    <%= f.date_select :pr_modify_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_del_date %><br />
+    <%= f.date_select :pr_del_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_create_by %><br />
+    <%= f.text_field :pr_create_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_modify_by %><br />
+    <%= f.text_field :pr_modify_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_del_by %><br />
+    <%= f.text_field :pr_del_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,49 @@
+<%= form_for(@panchayat) do |f| %>
+  <% if @panchayat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@panchayat.errors.count, "error") %> prohibited this panchayat from being saved:</h2>
+
+      <ul>
+      <% @panchayat.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pa_panchayat_id %><br />
+    <%= f.text_field :pa_panchayat_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pa_panchayat_cd %><br />
+    <%= f.text_field :pa_panchayat_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :pa_name %><br />
+    <%= f.text_field :pa_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pa_dist_id %><br />
+    <%= f.number_field :pa_dist_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pa_panchayat_type %><br />
+    <%= f.text_field :pa_panchayat_type %>
+  </div>
+  <div class="field">
+    <%= f.label :pa_create_from %><br />
+    <%= f.text_field :pa_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :pa_create_date %><br />
+    <%= f.date_select :pa_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pa_create_by %><br />
+    <%= f.text_field :pa_create_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

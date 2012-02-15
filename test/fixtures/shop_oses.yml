@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  os_id: 
+  os_cd: MyString
+  os_name: MyString
+  os_create_from: MyString
+  os_create_date: 2012-02-14
+  os_create_by: MyString
+
+two:
+  os_id: 
+  os_cd: MyString
+  os_name: MyString
+  os_create_from: MyString
+  os_create_date: 2012-02-14
+  os_create_by: MyString

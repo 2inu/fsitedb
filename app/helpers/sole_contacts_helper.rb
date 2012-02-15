@@ -1,0 +1,2 @@
+module SoleContactsHelper
+end

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Se service:</b>
+  <%= @service.se_service_id %>
+</p>
+
+<p>
+  <b>Se service cd:</b>
+  <%= @service.se_service_cd %>
+</p>
+
+<p>
+  <b>Se number:</b>
+  <%= @service.se_number %>
+</p>
+
+<p>
+  <b>Se name:</b>
+  <%= @service.se_name %>
+</p>
+
+<p>
+  <b>Se desc:</b>
+  <%= @service.se_desc %>
+</p>
+
+<p>
+  <b>Se create from:</b>
+  <%= @service.se_create_from %>
+</p>
+
+<p>
+  <b>Se create date:</b>
+  <%= @service.se_create_date %>
+</p>
+
+<p>
+  <b>Se create by:</b>
+  <%= @service.se_create_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>

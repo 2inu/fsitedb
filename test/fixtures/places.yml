@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pl_place_id: 
+  pl_place_cd: MyString
+  pl_name: MyString
+  pl_panchayat_id: 1
+  pl_dist_id: 1
+  pl_create_from: MyString
+  pl_create_date: 2012-02-14
+  pl_create_by: MyString
+
+two:
+  pl_place_id: 
+  pl_place_cd: MyString
+  pl_name: MyString
+  pl_panchayat_id: 1
+  pl_dist_id: 1
+  pl_create_from: MyString
+  pl_create_date: 2012-02-14
+  pl_create_by: MyString

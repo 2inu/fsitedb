@@ -1,0 +1,117 @@
+<%= form_for(@sole_contact) do |f| %>
+  <% if @sole_contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sole_contact.errors.count, "error") %> prohibited this sole_contact from being saved:</h2>
+
+      <ul>
+      <% @sole_contact.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :so_sole_id %><br />
+    <%= f.number_field :so_sole_id %>
+  </div>
+  <div class="field">
+    <%= f.label :so_sole_cd %><br />
+    <%= f.text_field :so_sole_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :so_shop_id %><br />
+    <%= f.number_field :so_shop_id %>
+  </div>
+  <div class="field">
+    <%= f.label :so_type %><br />
+    <%= f.text_field :so_type %>
+  </div>
+  <div class="field">
+    <%= f.label :so_first_name %><br />
+    <%= f.text_field :so_first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :so_nick_name %><br />
+    <%= f.text_field :so_nick_name %>
+  </div>
+  <div class="field">
+    <%= f.label :so_name_in_id %><br />
+    <%= f.text_field :so_name_in_id %>
+  </div>
+  <div class="field">
+    <%= f.label :so_name_in_bank_ac %><br />
+    <%= f.text_field :so_name_in_bank_ac %>
+  </div>
+  <div class="field">
+    <%= f.label :so_father_name %><br />
+    <%= f.text_field :so_father_name %>
+  </div>
+  <div class="field">
+    <%= f.label :so_family_name %><br />
+    <%= f.text_field :so_family_name %>
+  </div>
+  <div class="field">
+    <%= f.label :so_mobile %><br />
+    <%= f.number_field :so_mobile %>
+  </div>
+  <div class="field">
+    <%= f.label :so_email_id %><br />
+    <%= f.text_field :so_email_id %>
+  </div>
+  <div class="field">
+    <%= f.label :so_photo_id %><br />
+    <%= f.number_field :so_photo_id %>
+  </div>
+  <div class="field">
+    <%= f.label :so_photo_name %><br />
+    <%= f.text_field :so_photo_name %>
+  </div>
+  <div class="field">
+    <%= f.label :so_pro_flg %><br />
+    <%= f.text_field :so_pro_flg %>
+  </div>
+  <div class="field">
+    <%= f.label :so_bank_name_cd %><br />
+    <%= f.text_field :so_bank_name_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :so_id_type %><br />
+    <%= f.text_field :so_id_type %>
+  </div>
+  <div class="field">
+    <%= f.label :so_create_from %><br />
+    <%= f.text_field :so_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :so_create_date %><br />
+    <%= f.date_select :so_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :so_create_by %><br />
+    <%= f.text_field :so_create_by %>
+  </div>
+  <div class="field">
+    <%= f.label :so_modify_date %><br />
+    <%= f.date_select :so_modify_date %>
+  </div>
+  <div class="field">
+    <%= f.label :so_modify_by %><br />
+    <%= f.text_field :so_modify_by %>
+  </div>
+  <div class="field">
+    <%= f.label :so_del_by %><br />
+    <%= f.text_field :so_del_by %>
+  </div>
+  <div class="field">
+    <%= f.label :so_del_date %><br />
+    <%= f.date_select :so_del_date %>
+  </div>
+  <div class="field">
+    <%= f.label :so_del_flg %><br />
+    <%= f.text_field :so_del_flg %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

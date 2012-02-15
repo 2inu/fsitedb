@@ -1,0 +1,141 @@
+<%= form_for(@shop) do |f| %>
+  <% if @shop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@shop.errors.count, "error") %> prohibited this shop from being saved:</h2>
+
+      <ul>
+      <% @shop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sh_shop_id %><br />
+    <%= f.number_field :sh_shop_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_shop_cd %><br />
+    <%= f.text_field :sh_shop_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_name %><br />
+    <%= f.text_field :sh_name %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_panchayat_id %><br />
+    <%= f.number_field :sh_panchayat_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_place_id %><br />
+    <%= f.number_field :sh_place_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_dist_id %><br />
+    <%= f.number_field :sh_dist_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_addr_1 %><br />
+    <%= f.text_field :sh_addr_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_addr_2 %><br />
+    <%= f.text_field :sh_addr_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_addr_3 %><br />
+    <%= f.text_field :sh_addr_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_addr_4 %><br />
+    <%= f.text_field :sh_addr_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_phone_1 %><br />
+    <%= f.number_field :sh_phone_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_phone_2 %><br />
+    <%= f.number_field :sh_phone_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_mobile %><br />
+    <%= f.number_field :sh_mobile %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_email_1 %><br />
+    <%= f.text_field :sh_email_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_email_2 %><br />
+    <%= f.text_field :sh_email_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_fax_no %><br />
+    <%= f.text_field :sh_fax_no %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_branded_flg %><br />
+    <%= f.text_field :sh_branded_flg %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_touch_ph_sale %><br />
+    <%= f.text_field :sh_touch_ph_sale %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_reg_no %><br />
+    <%= f.text_field :sh_reg_no %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_establish_yr %><br />
+    <%= f.date_select :sh_establish_yr %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_remarks %><br />
+    <%= f.text_area :sh_remarks %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_long %><br />
+    <%= f.text_field :sh_long %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_lat %><br />
+    <%= f.text_field :sh_lat %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_create_from %><br />
+    <%= f.text_field :sh_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_create_date %><br />
+    <%= f.date_select :sh_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_create_by %><br />
+    <%= f.text_field :sh_create_by %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_modify_date %><br />
+    <%= f.date_select :sh_modify_date %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_modify_by %><br />
+    <%= f.text_field :sh_modify_by %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_del_by %><br />
+    <%= f.text_field :sh_del_by %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_del_date %><br />
+    <%= f.date_select :sh_del_date %>
+  </div>
+  <div class="field">
+    <%= f.label :sh_del_flg %><br />
+    <%= f.text_field :sh_del_flg %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

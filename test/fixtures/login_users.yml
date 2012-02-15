@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lo_id: 
+  lo_name: MyString
+  lo_pwd: MyString
+  lo_flg: 1
+  lo_seq_quest: MyString
+  lo_seq_ans: MyString
+  lo_pwd_rstflg: 1
+  lo_account_type: MyString
+  lo_create_from: MyString
+  lo_create_date: 2012-02-14
+  lo_create_by: MyString
+
+two:
+  lo_id: 
+  lo_name: MyString
+  lo_pwd: MyString
+  lo_flg: 1
+  lo_seq_quest: MyString
+  lo_seq_ans: MyString
+  lo_pwd_rstflg: 1
+  lo_account_type: MyString
+  lo_create_from: MyString
+  lo_create_date: 2012-02-14
+  lo_create_by: MyString

@@ -1,0 +1,33 @@
+<h1>Listing shop_activity_codes</h1>
+
+<table>
+  <tr>
+    <th>Ac actvty</th>
+    <th>Ac actvty cd</th>
+    <th>Ac desc</th>
+    <th>Ac create from</th>
+    <th>Ac create date</th>
+    <th>Ac create by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @shop_activity_codes.each do |shop_activity_code| %>
+  <tr>
+    <td><%= shop_activity_code.ac_actvty_id %></td>
+    <td><%= shop_activity_code.ac_actvty_cd %></td>
+    <td><%= shop_activity_code.ac_desc %></td>
+    <td><%= shop_activity_code.ac_create_from %></td>
+    <td><%= shop_activity_code.ac_create_date %></td>
+    <td><%= shop_activity_code.ac_create_by %></td>
+    <td><%= link_to 'Show', shop_activity_code %></td>
+    <td><%= link_to 'Edit', edit_shop_activity_code_path(shop_activity_code) %></td>
+    <td><%= link_to 'Destroy', shop_activity_code, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Shop activity code', new_shop_activity_code_path %>

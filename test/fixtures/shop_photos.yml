@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ph_id: 
+  ph_shop_id: 1
+  ph_name: MyString
+  ph_create_from: MyString
+  ph_create_date: 2012-02-14
+  ph_create_by: MyString
+
+two:
+  ph_id: 
+  ph_shop_id: 1
+  ph_name: MyString
+  ph_create_from: MyString
+  ph_create_date: 2012-02-14
+  ph_create_by: MyString

@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  so_sole_id: 1
+  so_sole_cd: 
+  so_shop_id: 1
+  so_type: MyString
+  so_first_name: MyString
+  so_nick_name: MyString
+  so_name_in_id: MyString
+  so_name_in_bank_ac: MyString
+  so_father_name: MyString
+  so_family_name: MyString
+  so_mobile: 1
+  so_email_id: MyString
+  so_photo_id: 1
+  so_photo_name: MyString
+  so_pro_flg: MyString
+  so_bank_name_cd: MyString
+  so_id_type: MyString
+  so_create_from: MyString
+  so_create_date: 2012-02-14
+  so_create_by: MyString
+  so_modify_date: 2012-02-14
+  so_modify_by: MyString
+  so_del_by: MyString
+  so_del_date: 2012-02-14
+  so_del_flg: MyString
+
+two:
+  so_sole_id: 1
+  so_sole_cd: 
+  so_shop_id: 1
+  so_type: MyString
+  so_first_name: MyString
+  so_nick_name: MyString
+  so_name_in_id: MyString
+  so_name_in_bank_ac: MyString
+  so_father_name: MyString
+  so_family_name: MyString
+  so_mobile: 1
+  so_email_id: MyString
+  so_photo_id: 1
+  so_photo_name: MyString
+  so_pro_flg: MyString
+  so_bank_name_cd: MyString
+  so_id_type: MyString
+  so_create_from: MyString
+  so_create_date: 2012-02-14
+  so_create_by: MyString
+  so_modify_date: 2012-02-14
+  so_modify_by: MyString
+  so_del_by: MyString
+  so_del_date: 2012-02-14
+  so_del_flg: MyString

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  se_service_id: 
+  se_service_cd: MyString
+  se_number: 1
+  se_name: MyString
+  se_desc: MyText
+  se_create_from: MyString
+  se_create_date: 2012-02-14
+  se_create_by: MyString
+
+two:
+  se_service_id: 
+  se_service_cd: MyString
+  se_number: 1
+  se_name: MyString
+  se_desc: MyText
+  se_create_from: MyString
+  se_create_date: 2012-02-14
+  se_create_by: MyString

@@ -1,0 +1,43 @@
+<h1>Listing login_users</h1>
+
+<table>
+  <tr>
+    <th>Lo</th>
+    <th>Lo name</th>
+    <th>Lo pwd</th>
+    <th>Lo flg</th>
+    <th>Lo seq quest</th>
+    <th>Lo seq ans</th>
+    <th>Lo pwd rstflg</th>
+    <th>Lo account type</th>
+    <th>Lo create from</th>
+    <th>Lo create date</th>
+    <th>Lo create by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @login_users.each do |login_user| %>
+  <tr>
+    <td><%= login_user.lo_id %></td>
+    <td><%= login_user.lo_name %></td>
+    <td><%= login_user.lo_pwd %></td>
+    <td><%= login_user.lo_flg %></td>
+    <td><%= login_user.lo_seq_quest %></td>
+    <td><%= login_user.lo_seq_ans %></td>
+    <td><%= login_user.lo_pwd_rstflg %></td>
+    <td><%= login_user.lo_account_type %></td>
+    <td><%= login_user.lo_create_from %></td>
+    <td><%= login_user.lo_create_date %></td>
+    <td><%= login_user.lo_create_by %></td>
+    <td><%= link_to 'Show', login_user %></td>
+    <td><%= link_to 'Edit', edit_login_user_path(login_user) %></td>
+    <td><%= link_to 'Destroy', login_user, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Login user', new_login_user_path %>

@@ -1,0 +1,83 @@
+<h1>Listing shops</h1>
+
+<table>
+  <tr>
+    <th>Sh shop</th>
+    <th>Sh shop cd</th>
+    <th>Sh name</th>
+    <th>Sh panchayat</th>
+    <th>Sh place</th>
+    <th>Sh dist</th>
+    <th>Sh addr 1</th>
+    <th>Sh addr 2</th>
+    <th>Sh addr 3</th>
+    <th>Sh addr 4</th>
+    <th>Sh phone 1</th>
+    <th>Sh phone 2</th>
+    <th>Sh mobile</th>
+    <th>Sh email 1</th>
+    <th>Sh email 2</th>
+    <th>Sh fax no</th>
+    <th>Sh branded flg</th>
+    <th>Sh touch ph sale</th>
+    <th>Sh reg no</th>
+    <th>Sh establish yr</th>
+    <th>Sh remarks</th>
+    <th>Sh long</th>
+    <th>Sh lat</th>
+    <th>Sh create from</th>
+    <th>Sh create date</th>
+    <th>Sh create by</th>
+    <th>Sh modify date</th>
+    <th>Sh modify by</th>
+    <th>Sh del by</th>
+    <th>Sh del date</th>
+    <th>Sh del flg</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @shops.each do |shop| %>
+  <tr>
+    <td><%= shop.sh_shop_id %></td>
+    <td><%= shop.sh_shop_cd %></td>
+    <td><%= shop.sh_name %></td>
+    <td><%= shop.sh_panchayat_id %></td>
+    <td><%= shop.sh_place_id %></td>
+    <td><%= shop.sh_dist_id %></td>
+    <td><%= shop.sh_addr_1 %></td>
+    <td><%= shop.sh_addr_2 %></td>
+    <td><%= shop.sh_addr_3 %></td>
+    <td><%= shop.sh_addr_4 %></td>
+    <td><%= shop.sh_phone_1 %></td>
+    <td><%= shop.sh_phone_2 %></td>
+    <td><%= shop.sh_mobile %></td>
+    <td><%= shop.sh_email_1 %></td>
+    <td><%= shop.sh_email_2 %></td>
+    <td><%= shop.sh_fax_no %></td>
+    <td><%= shop.sh_branded_flg %></td>
+    <td><%= shop.sh_touch_ph_sale %></td>
+    <td><%= shop.sh_reg_no %></td>
+    <td><%= shop.sh_establish_yr %></td>
+    <td><%= shop.sh_remarks %></td>
+    <td><%= shop.sh_long %></td>
+    <td><%= shop.sh_lat %></td>
+    <td><%= shop.sh_create_from %></td>
+    <td><%= shop.sh_create_date %></td>
+    <td><%= shop.sh_create_by %></td>
+    <td><%= shop.sh_modify_date %></td>
+    <td><%= shop.sh_modify_by %></td>
+    <td><%= shop.sh_del_by %></td>
+    <td><%= shop.sh_del_date %></td>
+    <td><%= shop.sh_del_flg %></td>
+    <td><%= link_to 'Show', shop %></td>
+    <td><%= link_to 'Edit', edit_shop_path(shop) %></td>
+    <td><%= link_to 'Destroy', shop, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Shop', new_shop_path %>

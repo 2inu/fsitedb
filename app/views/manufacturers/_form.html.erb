@@ -1,0 +1,121 @@
+<%= form_for(@manufacturer) do |f| %>
+  <% if @manufacturer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@manufacturer.errors.count, "error") %> prohibited this manufacturer from being saved:</h2>
+
+      <ul>
+      <% @manufacturer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pd_manufactr_id %><br />
+    <%= f.number_field :pd_manufactr_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_cd %><br />
+    <%= f.text_field :pd_manufactr_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_name %><br />
+    <%= f.text_field :pd_manufactr_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_ph1 %><br />
+    <%= f.number_field :pd_manufactr_ph1 %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_ph2 %><br />
+    <%= f.number_field :pd_manufactr_ph2 %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_mob1 %><br />
+    <%= f.number_field :pd_manufactr_mob1 %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_mob2 %><br />
+    <%= f.number_field :pd_manufactr_mob2 %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_email_1 %><br />
+    <%= f.text_field :pd_manufactr_email_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_email_2 %><br />
+    <%= f.text_field :pd_manufactr_email_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_fax_no %><br />
+    <%= f.text_field :pd_manufactr_fax_no %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_add1 %><br />
+    <%= f.text_field :pd_manufactr_add1 %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_add2 %><br />
+    <%= f.text_field :pd_manufactr_add2 %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_add3 %><br />
+    <%= f.text_field :pd_manufactr_add3 %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_add4 %><br />
+    <%= f.text_field :pd_manufactr_add4 %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_place %><br />
+    <%= f.text_field :pd_manufactr_place %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_city %><br />
+    <%= f.text_field :pd_manufactr_city %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_manufactr_country %><br />
+    <%= f.text_field :pd_manufactr_country %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_create_from %><br />
+    <%= f.text_field :pd_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_effect_date %><br />
+    <%= f.date_select :pd_effect_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_create_date %><br />
+    <%= f.date_select :pd_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_modify_date %><br />
+    <%= f.date_select :pd_modify_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_del_date %><br />
+    <%= f.date_select :pd_del_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_create_by %><br />
+    <%= f.text_field :pd_create_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_modify_by %><br />
+    <%= f.text_field :pd_modify_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_del_by %><br />
+    <%= f.text_field :pd_del_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pd_del_flg %><br />
+    <%= f.text_field :pd_del_flg %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

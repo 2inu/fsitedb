@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ph:</b>
+  <%= @shop_photo.ph_id %>
+</p>
+
+<p>
+  <b>Ph shop:</b>
+  <%= @shop_photo.ph_shop_id %>
+</p>
+
+<p>
+  <b>Ph name:</b>
+  <%= @shop_photo.ph_name %>
+</p>
+
+<p>
+  <b>Ph create from:</b>
+  <%= @shop_photo.ph_create_from %>
+</p>
+
+<p>
+  <b>Ph create date:</b>
+  <%= @shop_photo.ph_create_date %>
+</p>
+
+<p>
+  <b>Ph create by:</b>
+  <%= @shop_photo.ph_create_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_shop_photo_path(@shop_photo) %> |
+<%= link_to 'Back', shop_photos_path %>

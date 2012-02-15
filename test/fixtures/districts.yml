@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  di_dist_id: 
+  di_dist_cd: MyString
+  di_name: MyString
+  di_countr: 1
+  di_create_from: MyString
+  di_create_date: 2012-02-14
+  di_create_by: MyString
+
+two:
+  di_dist_id: 
+  di_dist_cd: MyString
+  di_name: MyString
+  di_countr: 1
+  di_create_from: MyString
+  di_create_date: 2012-02-14
+  di_create_by: MyString

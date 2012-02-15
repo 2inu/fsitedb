@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pd_manufactr_id: 1
+  pd_manufactr_cd: 
+  pd_manufactr_name: MyString
+  pd_manufactr_ph1: 1
+  pd_manufactr_ph2: 1
+  pd_manufactr_mob1: 1
+  pd_manufactr_mob2: 1
+  pd_manufactr_email_1: MyString
+  pd_manufactr_email_2: MyString
+  pd_manufactr_fax_no: MyString
+  pd_manufactr_add1: MyString
+  pd_manufactr_add2: MyString
+  pd_manufactr_add3: MyString
+  pd_manufactr_add4: MyString
+  pd_manufactr_place: MyString
+  pd_manufactr_city: MyString
+  pd_manufactr_country: MyString
+  pd_create_from: MyString
+  pd_effect_date: 2012-02-14
+  pd_create_date: 2012-02-14
+  pd_modify_date: 2012-02-14
+  pd_del_date: 2012-02-14
+  pd_create_by: MyString
+  pd_modify_by: MyString
+  pd_del_by: MyString
+  pd_del_flg: MyString
+
+two:
+  pd_manufactr_id: 1
+  pd_manufactr_cd: 
+  pd_manufactr_name: MyString
+  pd_manufactr_ph1: 1
+  pd_manufactr_ph2: 1
+  pd_manufactr_mob1: 1
+  pd_manufactr_mob2: 1
+  pd_manufactr_email_1: MyString
+  pd_manufactr_email_2: MyString
+  pd_manufactr_fax_no: MyString
+  pd_manufactr_add1: MyString
+  pd_manufactr_add2: MyString
+  pd_manufactr_add3: MyString
+  pd_manufactr_add4: MyString
+  pd_manufactr_place: MyString
+  pd_manufactr_city: MyString
+  pd_manufactr_country: MyString
+  pd_create_from: MyString
+  pd_effect_date: 2012-02-14
+  pd_create_date: 2012-02-14
+  pd_modify_date: 2012-02-14
+  pd_del_date: 2012-02-14
+  pd_create_by: MyString
+  pd_modify_by: MyString
+  pd_del_by: MyString
+  pd_del_flg: MyString

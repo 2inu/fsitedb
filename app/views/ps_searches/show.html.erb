@@ -1,0 +1,48 @@
+<% title "Ps Search" %>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @ps_search.manufacturer %>
+</p>
+<p>
+  <strong>Group:</strong>
+  <%= @ps_search.group %>
+</p>
+<p>
+  <strong>Category:</strong>
+  <%= @ps_search.category %>
+</p>
+<p>
+  <strong>Model:</strong>
+  <%= @ps_search.model %>
+</p>
+<p>
+  <strong>Os1:</strong>
+  <%= @ps_search.os1 %>
+</p>
+<p>
+  <strong>Os2:</strong>
+  <%= @ps_search.os2 %>
+</p>
+<p>
+  <strong>Os3:</strong>
+  <%= @ps_search.os3 %>
+</p>
+<p>
+  <strong>District:</strong>
+  <%= @ps_search.district %>
+</p>
+<p>
+  <strong>Panchayat:</strong>
+  <%= @ps_search.panchayat %>
+</p>
+<p>
+  <strong>Place:</strong>
+  <%= @ps_search.place %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_ps_search_path(@ps_search) %> |
+  <%= link_to "Destroy", @ps_search, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", ps_searches_path %>
+</p>

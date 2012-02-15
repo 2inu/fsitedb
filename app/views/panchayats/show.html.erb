@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pa panchayat:</b>
+  <%= @panchayat.pa_panchayat_id %>
+</p>
+
+<p>
+  <b>Pa panchayat cd:</b>
+  <%= @panchayat.pa_panchayat_cd %>
+</p>
+
+<p>
+  <b>Pa name:</b>
+  <%= @panchayat.pa_name %>
+</p>
+
+<p>
+  <b>Pa dist:</b>
+  <%= @panchayat.pa_dist_id %>
+</p>
+
+<p>
+  <b>Pa panchayat type:</b>
+  <%= @panchayat.pa_panchayat_type %>
+</p>
+
+<p>
+  <b>Pa create from:</b>
+  <%= @panchayat.pa_create_from %>
+</p>
+
+<p>
+  <b>Pa create date:</b>
+  <%= @panchayat.pa_create_date %>
+</p>
+
+<p>
+  <b>Pa create by:</b>
+  <%= @panchayat.pa_create_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_panchayat_path(@panchayat) %> |
+<%= link_to 'Back', panchayats_path %>

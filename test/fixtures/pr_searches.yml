@@ -1,0 +1,23 @@
+one:
+  manufacturer: MyString
+  group: MyString
+  category: MyString
+  model: MyString
+  os1: MyString
+  os2: MyString
+  os3: MyString
+  district: 1
+  panchayat: 1
+  place: 1
+
+two:
+  manufacturer: MyString
+  group: MyString
+  category: MyString
+  model: MyString
+  os1: MyString
+  os2: MyString
+  os3: MyString
+  district: 1
+  panchayat: 1
+  place: 1

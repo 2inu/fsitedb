@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pp:</b>
+  <%= @product_photo.pp_id %>
+</p>
+
+<p>
+  <b>Pp pr:</b>
+  <%= @product_photo.pp_pr_id %>
+</p>
+
+<p>
+  <b>Pp name:</b>
+  <%= @product_photo.pp_name %>
+</p>
+
+<p>
+  <b>Pp create from:</b>
+  <%= @product_photo.pp_create_from %>
+</p>
+
+<p>
+  <b>Pp create date:</b>
+  <%= @product_photo.pp_create_date %>
+</p>
+
+<p>
+  <b>Pp create by:</b>
+  <%= @product_photo.pp_create_by %>
+</p>
+
+<p>
+  <b>Pp modify date:</b>
+  <%= @product_photo.pp_modify_date %>
+</p>
+
+<p>
+  <b>Pp modify by:</b>
+  <%= @product_photo.pp_modify_by %>
+</p>
+
+<p>
+  <b>Pp del by:</b>
+  <%= @product_photo.pp_del_by %>
+</p>
+
+<p>
+  <b>Pp del date:</b>
+  <%= @product_photo.pp_del_date %>
+</p>
+
+<p>
+  <b>Pp del flg:</b>
+  <%= @product_photo.pp_del_flg %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_photo_path(@product_photo) %> |
+<%= link_to 'Back', product_photos_path %>

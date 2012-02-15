@@ -1,0 +1,33 @@
+<h1>Listing shop_oses</h1>
+
+<table>
+  <tr>
+    <th>Os</th>
+    <th>Os cd</th>
+    <th>Os name</th>
+    <th>Os create from</th>
+    <th>Os create date</th>
+    <th>Os create by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @shop_oses.each do |shop_ose| %>
+  <tr>
+    <td><%= shop_ose.os_id %></td>
+    <td><%= shop_ose.os_cd %></td>
+    <td><%= shop_ose.os_name %></td>
+    <td><%= shop_ose.os_create_from %></td>
+    <td><%= shop_ose.os_create_date %></td>
+    <td><%= shop_ose.os_create_by %></td>
+    <td><%= link_to 'Show', shop_ose %></td>
+    <td><%= link_to 'Edit', edit_shop_ose_path(shop_ose) %></td>
+    <td><%= link_to 'Destroy', shop_ose, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Shop ose', new_shop_ose_path %>

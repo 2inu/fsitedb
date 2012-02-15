@@ -1,0 +1,41 @@
+<h1>Listing product_shops</h1>
+
+<table>
+  <tr>
+    <th>Ps pr code</th>
+    <th>Ps shop cd</th>
+    <th>Ps create from</th>
+    <th>Ps create date</th>
+    <th>Ps create by</th>
+    <th>Ps modify date</th>
+    <th>Ps modify by</th>
+    <th>Ps del by</th>
+    <th>Ps del date</th>
+    <th>Ps del flg</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @product_shops.each do |product_shop| %>
+  <tr>
+    <td><%= product_shop.ps_pr_code %></td>
+    <td><%= product_shop.ps_shop_cd %></td>
+    <td><%= product_shop.ps_create_from %></td>
+    <td><%= product_shop.ps_create_date %></td>
+    <td><%= product_shop.ps_create_by %></td>
+    <td><%= product_shop.ps_modify_date %></td>
+    <td><%= product_shop.ps_modify_by %></td>
+    <td><%= product_shop.ps_del_by %></td>
+    <td><%= product_shop.ps_del_date %></td>
+    <td><%= product_shop.ps_del_flg %></td>
+    <td><%= link_to 'Show', product_shop %></td>
+    <td><%= link_to 'Edit', edit_product_shop_path(product_shop) %></td>
+    <td><%= link_to 'Destroy', product_shop, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Product shop', new_product_shop_path %>

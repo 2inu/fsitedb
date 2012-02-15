@@ -1,0 +1,67 @@
+<h1>Listing pros</h1>
+
+<table>
+  <tr>
+    <th>Pr pro</th>
+    <th>Pr pro cd</th>
+    <th>Pr sole</th>
+    <th>Pr shop</th>
+    <th>Pr type</th>
+    <th>Pr nick name</th>
+    <th>Pr name in</th>
+    <th>Pr first name</th>
+    <th>Pr father name</th>
+    <th>Pr family name</th>
+    <th>Pr mobile</th>
+    <th>Pr email</th>
+    <th>Pr id type</th>
+    <th>Pr photo</th>
+    <th>Pr photo name</th>
+    <th>Pr create from</th>
+    <th>Pr create date</th>
+    <th>Pr create by</th>
+    <th>Pr modify date</th>
+    <th>Pr modify by</th>
+    <th>Pr del by</th>
+    <th>Pr del date</th>
+    <th>Pr del flg</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pros.each do |pro| %>
+  <tr>
+    <td><%= pro.pr_pro_id %></td>
+    <td><%= pro.pr_pro_cd %></td>
+    <td><%= pro.pr_sole_id %></td>
+    <td><%= pro.pr_shop_id %></td>
+    <td><%= pro.pr_type %></td>
+    <td><%= pro.pr_nick_name %></td>
+    <td><%= pro.pr_name_in_id %></td>
+    <td><%= pro.pr_first_name %></td>
+    <td><%= pro.pr_father_name %></td>
+    <td><%= pro.pr_family_name %></td>
+    <td><%= pro.pr_mobile %></td>
+    <td><%= pro.pr_email_id %></td>
+    <td><%= pro.pr_id_type %></td>
+    <td><%= pro.pr_photo_id %></td>
+    <td><%= pro.pr_photo_name %></td>
+    <td><%= pro.pr_create_from %></td>
+    <td><%= pro.pr_create_date %></td>
+    <td><%= pro.pr_create_by %></td>
+    <td><%= pro.pr_modify_date %></td>
+    <td><%= pro.pr_modify_by %></td>
+    <td><%= pro.pr_del_by %></td>
+    <td><%= pro.pr_del_date %></td>
+    <td><%= pro.pr_del_flg %></td>
+    <td><%= link_to 'Show', pro %></td>
+    <td><%= link_to 'Edit', edit_pro_path(pro) %></td>
+    <td><%= link_to 'Destroy', pro, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pro', new_pro_path %>

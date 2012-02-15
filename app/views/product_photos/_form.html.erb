@@ -1,0 +1,61 @@
+<%= form_for(@product_photo) do |f| %>
+  <% if @product_photo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product_photo.errors.count, "error") %> prohibited this product_photo from being saved:</h2>
+
+      <ul>
+      <% @product_photo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pp_id %><br />
+    <%= f.text_field :pp_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pp_pr_id %><br />
+    <%= f.number_field :pp_pr_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pp_name %><br />
+    <%= f.text_field :pp_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pp_create_from %><br />
+    <%= f.text_field :pp_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :pp_create_date %><br />
+    <%= f.date_select :pp_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pp_create_by %><br />
+    <%= f.text_field :pp_create_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pp_modify_date %><br />
+    <%= f.date_select :pp_modify_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pp_modify_by %><br />
+    <%= f.text_field :pp_modify_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pp_del_by %><br />
+    <%= f.text_field :pp_del_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pp_del_date %><br />
+    <%= f.date_select :pp_del_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pp_del_flg %><br />
+    <%= f.text_field :pp_del_flg %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

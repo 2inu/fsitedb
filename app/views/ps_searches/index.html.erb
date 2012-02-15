@@ -1,0 +1,35 @@
+<% title "Ps Searches" %>
+
+<table>
+  <tr>
+    <th>Manufacturer</th>
+    <th>Group</th>
+    <th>Category</th>
+    <th>Model</th>
+    <th>Os1</th>
+    <th>Os2</th>
+    <th>Os3</th>
+    <th>District</th>
+    <th>Panchayat</th>
+    <th>Place</th>
+  </tr>
+  <% for ps_search in @ps_searches %>
+    <tr>
+      <td><%= ps_search.manufacturer %></td>
+      <td><%= ps_search.group %></td>
+      <td><%= ps_search.category %></td>
+      <td><%= ps_search.model %></td>
+      <td><%= ps_search.os1 %></td>
+      <td><%= ps_search.os2 %></td>
+      <td><%= ps_search.os3 %></td>
+      <td><%= ps_search.district %></td>
+      <td><%= ps_search.panchayat %></td>
+      <td><%= ps_search.place %></td>
+      <td><%= link_to "Show", ps_search %></td>
+      <td><%= link_to "Edit", edit_ps_search_path(ps_search) %></td>
+      <td><%= link_to "Destroy", ps_search, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Ps Search", new_ps_search_path %></p>

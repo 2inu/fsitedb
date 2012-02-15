@@ -1,0 +1,43 @@
+<h1>Listing product_photos</h1>
+
+<table>
+  <tr>
+    <th>Pp</th>
+    <th>Pp pr</th>
+    <th>Pp name</th>
+    <th>Pp create from</th>
+    <th>Pp create date</th>
+    <th>Pp create by</th>
+    <th>Pp modify date</th>
+    <th>Pp modify by</th>
+    <th>Pp del by</th>
+    <th>Pp del date</th>
+    <th>Pp del flg</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @product_photos.each do |product_photo| %>
+  <tr>
+    <td><%= product_photo.pp_id %></td>
+    <td><%= product_photo.pp_pr_id %></td>
+    <td><%= product_photo.pp_name %></td>
+    <td><%= product_photo.pp_create_from %></td>
+    <td><%= product_photo.pp_create_date %></td>
+    <td><%= product_photo.pp_create_by %></td>
+    <td><%= product_photo.pp_modify_date %></td>
+    <td><%= product_photo.pp_modify_by %></td>
+    <td><%= product_photo.pp_del_by %></td>
+    <td><%= product_photo.pp_del_date %></td>
+    <td><%= product_photo.pp_del_flg %></td>
+    <td><%= link_to 'Show', product_photo %></td>
+    <td><%= link_to 'Edit', edit_product_photo_path(product_photo) %></td>
+    <td><%= link_to 'Destroy', product_photo, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Product photo', new_product_photo_path %>

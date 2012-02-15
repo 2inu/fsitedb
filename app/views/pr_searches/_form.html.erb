@@ -1,0 +1,44 @@
+<%= form_for @pr_search do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :manufacturer %><br />
+    <%= f.text_field :manufacturer %>
+  </p>
+  <p>
+    <%= f.label :group %><br />
+    <%= f.text_field :group %>
+  </p>
+  <p>
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </p>
+  <p>
+    <%= f.label :model %><br />
+    <%= f.text_field :model %>
+  </p>
+  <p>
+    <%= f.label :os1 %><br />
+    <%= f.text_field :os1 %>
+  </p>
+  <p>
+    <%= f.label :os2 %><br />
+    <%= f.text_field :os2 %>
+  </p>
+  <p>
+    <%= f.label :os3 %><br />
+    <%= f.text_field :os3 %>
+  </p>
+  <p>
+    <%= f.label :district %><br />
+    <%= f.number_field :district %>
+  </p>
+  <p>
+    <%= f.label :panchayat %><br />
+    <%= f.number_field :panchayat %>
+  </p>
+  <p>
+    <%= f.label :place %><br />
+    <%= f.number_field :place %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

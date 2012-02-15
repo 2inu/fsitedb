@@ -1,0 +1,73 @@
+<h1>Listing manufacturers</h1>
+
+<table>
+  <tr>
+    <th>Pd manufactr</th>
+    <th>Pd manufactr cd</th>
+    <th>Pd manufactr name</th>
+    <th>Pd manufactr ph1</th>
+    <th>Pd manufactr ph2</th>
+    <th>Pd manufactr mob1</th>
+    <th>Pd manufactr mob2</th>
+    <th>Pd manufactr email 1</th>
+    <th>Pd manufactr email 2</th>
+    <th>Pd manufactr fax no</th>
+    <th>Pd manufactr add1</th>
+    <th>Pd manufactr add2</th>
+    <th>Pd manufactr add3</th>
+    <th>Pd manufactr add4</th>
+    <th>Pd manufactr place</th>
+    <th>Pd manufactr city</th>
+    <th>Pd manufactr country</th>
+    <th>Pd create from</th>
+    <th>Pd effect date</th>
+    <th>Pd create date</th>
+    <th>Pd modify date</th>
+    <th>Pd del date</th>
+    <th>Pd create by</th>
+    <th>Pd modify by</th>
+    <th>Pd del by</th>
+    <th>Pd del flg</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @manufacturers.each do |manufacturer| %>
+  <tr>
+    <td><%= manufacturer.pd_manufactr_id %></td>
+    <td><%= manufacturer.pd_manufactr_cd %></td>
+    <td><%= manufacturer.pd_manufactr_name %></td>
+    <td><%= manufacturer.pd_manufactr_ph1 %></td>
+    <td><%= manufacturer.pd_manufactr_ph2 %></td>
+    <td><%= manufacturer.pd_manufactr_mob1 %></td>
+    <td><%= manufacturer.pd_manufactr_mob2 %></td>
+    <td><%= manufacturer.pd_manufactr_email_1 %></td>
+    <td><%= manufacturer.pd_manufactr_email_2 %></td>
+    <td><%= manufacturer.pd_manufactr_fax_no %></td>
+    <td><%= manufacturer.pd_manufactr_add1 %></td>
+    <td><%= manufacturer.pd_manufactr_add2 %></td>
+    <td><%= manufacturer.pd_manufactr_add3 %></td>
+    <td><%= manufacturer.pd_manufactr_add4 %></td>
+    <td><%= manufacturer.pd_manufactr_place %></td>
+    <td><%= manufacturer.pd_manufactr_city %></td>
+    <td><%= manufacturer.pd_manufactr_country %></td>
+    <td><%= manufacturer.pd_create_from %></td>
+    <td><%= manufacturer.pd_effect_date %></td>
+    <td><%= manufacturer.pd_create_date %></td>
+    <td><%= manufacturer.pd_modify_date %></td>
+    <td><%= manufacturer.pd_del_date %></td>
+    <td><%= manufacturer.pd_create_by %></td>
+    <td><%= manufacturer.pd_modify_by %></td>
+    <td><%= manufacturer.pd_del_by %></td>
+    <td><%= manufacturer.pd_del_flg %></td>
+    <td><%= link_to 'Show', manufacturer %></td>
+    <td><%= link_to 'Edit', edit_manufacturer_path(manufacturer) %></td>
+    <td><%= link_to 'Destroy', manufacturer, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Manufacturer', new_manufacturer_path %>

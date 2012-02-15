@@ -1,0 +1,67 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sh_shop_id: 1
+  sh_shop_cd: 
+  sh_name: MyString
+  sh_panchayat_id: 1
+  sh_place_id: 1
+  sh_dist_id: 1
+  sh_addr_1: MyString
+  sh_addr_2: MyString
+  sh_addr_3: MyString
+  sh_addr_4: MyString
+  sh_phone_1: 1
+  sh_phone_2: 1
+  sh_mobile: 1
+  sh_email_1: MyString
+  sh_email_2: MyString
+  sh_fax_no: MyString
+  sh_branded_flg: MyString
+  sh_touch_ph_sale: MyString
+  sh_reg_no: MyString
+  sh_establish_yr: 2012-02-14
+  sh_remarks: MyText
+  sh_long: 9.99
+  sh_lat: 9.99
+  sh_create_from: MyString
+  sh_create_date: 2012-02-14
+  sh_create_by: MyString
+  sh_modify_date: 2012-02-14
+  sh_modify_by: MyString
+  sh_del_by: MyString
+  sh_del_date: 2012-02-14
+  sh_del_flg: MyString
+
+two:
+  sh_shop_id: 1
+  sh_shop_cd: 
+  sh_name: MyString
+  sh_panchayat_id: 1
+  sh_place_id: 1
+  sh_dist_id: 1
+  sh_addr_1: MyString
+  sh_addr_2: MyString
+  sh_addr_3: MyString
+  sh_addr_4: MyString
+  sh_phone_1: 1
+  sh_phone_2: 1
+  sh_mobile: 1
+  sh_email_1: MyString
+  sh_email_2: MyString
+  sh_fax_no: MyString
+  sh_branded_flg: MyString
+  sh_touch_ph_sale: MyString
+  sh_reg_no: MyString
+  sh_establish_yr: 2012-02-14
+  sh_remarks: MyText
+  sh_long: 9.99
+  sh_lat: 9.99
+  sh_create_from: MyString
+  sh_create_date: 2012-02-14
+  sh_create_by: MyString
+  sh_modify_date: 2012-02-14
+  sh_modify_by: MyString
+  sh_del_by: MyString
+  sh_del_date: 2012-02-14
+  sh_del_flg: MyString

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pg_group_cd: 
+  pg_group_name: MyString
+  pg_create_from: MyString
+  pg_create_date: 2012-02-14
+  pg_create_by: MyString
+  pg_modify_date: 2012-02-14
+  pg_modify_by: MyString
+  pg_del_by: MyString
+  pg_del_date: 2012-02-14
+  pg_del_flg: MyString
+
+two:
+  pg_group_cd: 
+  pg_group_name: MyString
+  pg_create_from: MyString
+  pg_create_date: 2012-02-14
+  pg_create_by: MyString
+  pg_modify_date: 2012-02-14
+  pg_modify_by: MyString
+  pg_del_by: MyString
+  pg_del_date: 2012-02-14
+  pg_del_flg: MyString

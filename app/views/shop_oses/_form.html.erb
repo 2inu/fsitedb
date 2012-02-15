@@ -1,0 +1,41 @@
+<%= form_for(@shop_ose) do |f| %>
+  <% if @shop_ose.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@shop_ose.errors.count, "error") %> prohibited this shop_ose from being saved:</h2>
+
+      <ul>
+      <% @shop_ose.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :os_id %><br />
+    <%= f.text_field :os_id %>
+  </div>
+  <div class="field">
+    <%= f.label :os_cd %><br />
+    <%= f.text_field :os_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :os_name %><br />
+    <%= f.text_field :os_name %>
+  </div>
+  <div class="field">
+    <%= f.label :os_create_from %><br />
+    <%= f.text_field :os_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :os_create_date %><br />
+    <%= f.date_select :os_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :os_create_by %><br />
+    <%= f.text_field :os_create_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

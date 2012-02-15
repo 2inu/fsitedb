@@ -1,0 +1,111 @@
+<h1>Listing products</h1>
+
+<table>
+  <tr>
+    <th>Pr</th>
+    <th>Pr cd</th>
+    <th>Pr number</th>
+    <th>Pr brand cd</th>
+    <th>Pr brand name</th>
+    <th>Pr os</th>
+    <th>Pr os version</th>
+    <th>Pr os ver date</th>
+    <th>Pr os ver name</th>
+    <th>Pr model specs</th>
+    <th>Pr base model flg</th>
+    <th>Pr manufactr cd</th>
+    <th>Pr height</th>
+    <th>Pr height type</th>
+    <th>Pr width</th>
+    <th>Pr width type</th>
+    <th>Pr thick</th>
+    <th>Pr thick type</th>
+    <th>Pr weight</th>
+    <th>Pr weight type</th>
+    <th>Pr ram</th>
+    <th>Pr ram type</th>
+    <th>Pr cpu model</th>
+    <th>Pr camera flg</th>
+    <th>Pr camera desc</th>
+    <th>Pr battery pow</th>
+    <th>Pr gps flg</th>
+    <th>Pr wifi type</th>
+    <th>Pr bluetooth flg</th>
+    <th>Pr short desc</th>
+    <th>Pr long desc</th>
+    <th>Pr group cd</th>
+    <th>Pr applicability cd</th>
+    <th>Pr distributor cd</th>
+    <th>Pr product stat flg</th>
+    <th>Pr record stat flg</th>
+    <th>Pr del flg</th>
+    <th>Pr create from</th>
+    <th>Pr effect date</th>
+    <th>Pr create date</th>
+    <th>Pr modify date</th>
+    <th>Pr del date</th>
+    <th>Pr create by</th>
+    <th>Pr modify by</th>
+    <th>Pr del by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+    <td><%= product.pr_id %></td>
+    <td><%= product.pr_cd %></td>
+    <td><%= product.pr_number %></td>
+    <td><%= product.pr_brand_cd %></td>
+    <td><%= product.pr_brand_name %></td>
+    <td><%= product.pr_os %></td>
+    <td><%= product.pr_os_version %></td>
+    <td><%= product.pr_os_ver_date %></td>
+    <td><%= product.pr_os_ver_name %></td>
+    <td><%= product.pr_model_specs %></td>
+    <td><%= product.pr_base_model_flg %></td>
+    <td><%= product.pr_manufactr_cd %></td>
+    <td><%= product.pr_height %></td>
+    <td><%= product.pr_height_type %></td>
+    <td><%= product.pr_width %></td>
+    <td><%= product.pr_width_type %></td>
+    <td><%= product.pr_thick %></td>
+    <td><%= product.pr_thick_type %></td>
+    <td><%= product.pr_weight %></td>
+    <td><%= product.pr_weight_type %></td>
+    <td><%= product.pr_ram %></td>
+    <td><%= product.pr_ram_type %></td>
+    <td><%= product.pr_cpu_model %></td>
+    <td><%= product.pr_camera_flg %></td>
+    <td><%= product.pr_camera_desc %></td>
+    <td><%= product.pr_battery_pow %></td>
+    <td><%= product.pr_gps_flg %></td>
+    <td><%= product.pr_wifi_type %></td>
+    <td><%= product.pr_bluetooth_flg %></td>
+    <td><%= product.pr_short_desc %></td>
+    <td><%= product.pr_long_desc %></td>
+    <td><%= product.pr_group_cd %></td>
+    <td><%= product.pr_applicability_cd %></td>
+    <td><%= product.pr_distributor_cd %></td>
+    <td><%= product.pr_product_stat_flg %></td>
+    <td><%= product.pr_record_stat_flg %></td>
+    <td><%= product.pr_del_flg %></td>
+    <td><%= product.pr_create_from %></td>
+    <td><%= product.pr_effect_date %></td>
+    <td><%= product.pr_create_date %></td>
+    <td><%= product.pr_modify_date %></td>
+    <td><%= product.pr_del_date %></td>
+    <td><%= product.pr_create_by %></td>
+    <td><%= product.pr_modify_by %></td>
+    <td><%= product.pr_del_by %></td>
+    <td><%= link_to 'Show', product %></td>
+    <td><%= link_to 'Edit', edit_product_path(product) %></td>
+    <td><%= link_to 'Destroy', product, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Product', new_product_path %>

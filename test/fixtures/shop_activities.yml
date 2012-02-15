@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  av_shop_id: 
+  av_actvty_id: 1
+  av_os_id: 1
+  av_service_id: 1
+  av_remarks: MyText
+  av_create_from: MyString
+  av_create_date: 2012-02-14
+  av_create_by: MyString
+
+two:
+  av_shop_id: 
+  av_actvty_id: 1
+  av_os_id: 1
+  av_service_id: 1
+  av_remarks: MyText
+  av_create_from: MyString
+  av_create_date: 2012-02-14
+  av_create_by: MyString

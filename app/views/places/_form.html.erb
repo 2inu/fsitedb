@@ -1,0 +1,49 @@
+<%= form_for(@place) do |f| %>
+  <% if @place.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@place.errors.count, "error") %> prohibited this place from being saved:</h2>
+
+      <ul>
+      <% @place.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pl_place_id %><br />
+    <%= f.text_field :pl_place_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pl_place_cd %><br />
+    <%= f.text_field :pl_place_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :pl_name %><br />
+    <%= f.text_field :pl_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pl_panchayat_id %><br />
+    <%= f.number_field :pl_panchayat_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pl_dist_id %><br />
+    <%= f.number_field :pl_dist_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pl_create_from %><br />
+    <%= f.text_field :pl_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :pl_create_date %><br />
+    <%= f.date_select :pl_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pl_create_by %><br />
+    <%= f.text_field :pl_create_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

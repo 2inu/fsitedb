@@ -1,0 +1,2 @@
+module ShopActivitiesHelper
+end

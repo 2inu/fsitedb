@@ -1,0 +1,57 @@
+<%= form_for(@product_group) do |f| %>
+  <% if @product_group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product_group.errors.count, "error") %> prohibited this product_group from being saved:</h2>
+
+      <ul>
+      <% @product_group.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pg_group_cd %><br />
+    <%= f.text_field :pg_group_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_group_name %><br />
+    <%= f.text_field :pg_group_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_create_from %><br />
+    <%= f.text_field :pg_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_create_date %><br />
+    <%= f.date_select :pg_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_create_by %><br />
+    <%= f.text_field :pg_create_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_modify_date %><br />
+    <%= f.date_select :pg_modify_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_modify_by %><br />
+    <%= f.text_field :pg_modify_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_del_by %><br />
+    <%= f.text_field :pg_del_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_del_date %><br />
+    <%= f.date_select :pg_del_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pg_del_flg %><br />
+    <%= f.text_field :pg_del_flg %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

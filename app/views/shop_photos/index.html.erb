@@ -1,0 +1,33 @@
+<h1>Listing shop_photos</h1>
+
+<table>
+  <tr>
+    <th>Ph</th>
+    <th>Ph shop</th>
+    <th>Ph name</th>
+    <th>Ph create from</th>
+    <th>Ph create date</th>
+    <th>Ph create by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @shop_photos.each do |shop_photo| %>
+  <tr>
+    <td><%= shop_photo.ph_id %></td>
+    <td><%= shop_photo.ph_shop_id %></td>
+    <td><%= shop_photo.ph_name %></td>
+    <td><%= shop_photo.ph_create_from %></td>
+    <td><%= shop_photo.ph_create_date %></td>
+    <td><%= shop_photo.ph_create_by %></td>
+    <td><%= link_to 'Show', shop_photo %></td>
+    <td><%= link_to 'Edit', edit_shop_photo_path(shop_photo) %></td>
+    <td><%= link_to 'Destroy', shop_photo, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Shop photo', new_shop_photo_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ba_bank_cd: 
+  ba_bank_name: MyString
+  ba_create_from: MyString
+  ba_create_date: 2012-02-14
+  ba_create_by: MyString
+
+two:
+  ba_bank_cd: 
+  ba_bank_name: MyString
+  ba_create_from: MyString
+  ba_create_date: 2012-02-14
+  ba_create_by: MyString

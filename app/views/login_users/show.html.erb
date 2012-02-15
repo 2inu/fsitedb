@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lo:</b>
+  <%= @login_user.lo_id %>
+</p>
+
+<p>
+  <b>Lo name:</b>
+  <%= @login_user.lo_name %>
+</p>
+
+<p>
+  <b>Lo pwd:</b>
+  <%= @login_user.lo_pwd %>
+</p>
+
+<p>
+  <b>Lo flg:</b>
+  <%= @login_user.lo_flg %>
+</p>
+
+<p>
+  <b>Lo seq quest:</b>
+  <%= @login_user.lo_seq_quest %>
+</p>
+
+<p>
+  <b>Lo seq ans:</b>
+  <%= @login_user.lo_seq_ans %>
+</p>
+
+<p>
+  <b>Lo pwd rstflg:</b>
+  <%= @login_user.lo_pwd_rstflg %>
+</p>
+
+<p>
+  <b>Lo account type:</b>
+  <%= @login_user.lo_account_type %>
+</p>
+
+<p>
+  <b>Lo create from:</b>
+  <%= @login_user.lo_create_from %>
+</p>
+
+<p>
+  <b>Lo create date:</b>
+  <%= @login_user.lo_create_date %>
+</p>
+
+<p>
+  <b>Lo create by:</b>
+  <%= @login_user.lo_create_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_login_user_path(@login_user) %> |
+<%= link_to 'Back', login_users_path %>

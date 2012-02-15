@@ -1,0 +1,35 @@
+<h1>Listing districts</h1>
+
+<table>
+  <tr>
+    <th>Di dist</th>
+    <th>Di dist cd</th>
+    <th>Di name</th>
+    <th>Di countr</th>
+    <th>Di create from</th>
+    <th>Di create date</th>
+    <th>Di create by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @districts.each do |district| %>
+  <tr>
+    <td><%= district.di_dist_id %></td>
+    <td><%= district.di_dist_cd %></td>
+    <td><%= district.di_name %></td>
+    <td><%= district.di_countr %></td>
+    <td><%= district.di_create_from %></td>
+    <td><%= district.di_create_date %></td>
+    <td><%= district.di_create_by %></td>
+    <td><%= link_to 'Show', district %></td>
+    <td><%= link_to 'Edit', edit_district_path(district) %></td>
+    <td><%= link_to 'Destroy', district, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New District', new_district_path %>

@@ -1,0 +1,109 @@
+<%= form_for(@pro) do |f| %>
+  <% if @pro.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pro.errors.count, "error") %> prohibited this pro from being saved:</h2>
+
+      <ul>
+      <% @pro.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pr_pro_id %><br />
+    <%= f.text_field :pr_pro_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_pro_cd %><br />
+    <%= f.text_field :pr_pro_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_sole_id %><br />
+    <%= f.number_field :pr_sole_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_shop_id %><br />
+    <%= f.number_field :pr_shop_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_type %><br />
+    <%= f.text_field :pr_type %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_nick_name %><br />
+    <%= f.text_field :pr_nick_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_name_in_id %><br />
+    <%= f.text_field :pr_name_in_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_first_name %><br />
+    <%= f.text_field :pr_first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_father_name %><br />
+    <%= f.text_field :pr_father_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_family_name %><br />
+    <%= f.text_field :pr_family_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_mobile %><br />
+    <%= f.number_field :pr_mobile %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_email_id %><br />
+    <%= f.text_field :pr_email_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_id_type %><br />
+    <%= f.text_field :pr_id_type %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_photo_id %><br />
+    <%= f.number_field :pr_photo_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_photo_name %><br />
+    <%= f.text_field :pr_photo_name %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_create_from %><br />
+    <%= f.text_field :pr_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_create_date %><br />
+    <%= f.date_select :pr_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_create_by %><br />
+    <%= f.text_field :pr_create_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_modify_date %><br />
+    <%= f.date_select :pr_modify_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_modify_by %><br />
+    <%= f.text_field :pr_modify_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_del_by %><br />
+    <%= f.text_field :pr_del_by %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_del_date %><br />
+    <%= f.date_select :pr_del_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pr_del_flg %><br />
+    <%= f.text_field :pr_del_flg %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

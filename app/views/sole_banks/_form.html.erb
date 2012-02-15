@@ -1,0 +1,37 @@
+<%= form_for(@sole_bank) do |f| %>
+  <% if @sole_bank.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sole_bank.errors.count, "error") %> prohibited this sole_bank from being saved:</h2>
+
+      <ul>
+      <% @sole_bank.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ba_bank_cd %><br />
+    <%= f.text_field :ba_bank_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :ba_bank_name %><br />
+    <%= f.text_field :ba_bank_name %>
+  </div>
+  <div class="field">
+    <%= f.label :ba_create_from %><br />
+    <%= f.text_field :ba_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :ba_create_date %><br />
+    <%= f.date_select :ba_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :ba_create_by %><br />
+    <%= f.text_field :ba_create_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,61 @@
+<%= form_for(@login_user) do |f| %>
+  <% if @login_user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@login_user.errors.count, "error") %> prohibited this login_user from being saved:</h2>
+
+      <ul>
+      <% @login_user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :lo_id %><br />
+    <%= f.text_field :lo_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lo_name %><br />
+    <%= f.text_field :lo_name %>
+  </div>
+  <div class="field">
+    <%= f.label :lo_pwd %><br />
+    <%= f.text_field :lo_pwd %>
+  </div>
+  <div class="field">
+    <%= f.label :lo_flg %><br />
+    <%= f.number_field :lo_flg %>
+  </div>
+  <div class="field">
+    <%= f.label :lo_seq_quest %><br />
+    <%= f.text_field :lo_seq_quest %>
+  </div>
+  <div class="field">
+    <%= f.label :lo_seq_ans %><br />
+    <%= f.text_field :lo_seq_ans %>
+  </div>
+  <div class="field">
+    <%= f.label :lo_pwd_rstflg %><br />
+    <%= f.number_field :lo_pwd_rstflg %>
+  </div>
+  <div class="field">
+    <%= f.label :lo_account_type %><br />
+    <%= f.text_field :lo_account_type %>
+  </div>
+  <div class="field">
+    <%= f.label :lo_create_from %><br />
+    <%= f.text_field :lo_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :lo_create_date %><br />
+    <%= f.date_select :lo_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :lo_create_by %><br />
+    <%= f.text_field :lo_create_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

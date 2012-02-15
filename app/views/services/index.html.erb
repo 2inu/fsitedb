@@ -1,0 +1,37 @@
+<h1>Listing services</h1>
+
+<table>
+  <tr>
+    <th>Se service</th>
+    <th>Se service cd</th>
+    <th>Se number</th>
+    <th>Se name</th>
+    <th>Se desc</th>
+    <th>Se create from</th>
+    <th>Se create date</th>
+    <th>Se create by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @services.each do |service| %>
+  <tr>
+    <td><%= service.se_service_id %></td>
+    <td><%= service.se_service_cd %></td>
+    <td><%= service.se_number %></td>
+    <td><%= service.se_name %></td>
+    <td><%= service.se_desc %></td>
+    <td><%= service.se_create_from %></td>
+    <td><%= service.se_create_date %></td>
+    <td><%= service.se_create_by %></td>
+    <td><%= link_to 'Show', service %></td>
+    <td><%= link_to 'Edit', edit_service_path(service) %></td>
+    <td><%= link_to 'Destroy', service, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Service', new_service_path %>

@@ -1,0 +1,2 @@
+module ShopOsesHelper
+end

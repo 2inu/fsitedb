@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pr_pro_id: 
+  pr_pro_cd: MyString
+  pr_sole_id: 1
+  pr_shop_id: 1
+  pr_type: MyString
+  pr_nick_name: MyString
+  pr_name_in_id: MyString
+  pr_first_name: MyString
+  pr_father_name: MyString
+  pr_family_name: MyString
+  pr_mobile: 1
+  pr_email_id: MyString
+  pr_id_type: MyString
+  pr_photo_id: 1
+  pr_photo_name: MyString
+  pr_create_from: MyString
+  pr_create_date: 2012-02-14
+  pr_create_by: MyString
+  pr_modify_date: 2012-02-14
+  pr_modify_by: MyString
+  pr_del_by: MyString
+  pr_del_date: 2012-02-14
+  pr_del_flg: MyString
+
+two:
+  pr_pro_id: 
+  pr_pro_cd: MyString
+  pr_sole_id: 1
+  pr_shop_id: 1
+  pr_type: MyString
+  pr_nick_name: MyString
+  pr_name_in_id: MyString
+  pr_first_name: MyString
+  pr_father_name: MyString
+  pr_family_name: MyString
+  pr_mobile: 1
+  pr_email_id: MyString
+  pr_id_type: MyString
+  pr_photo_id: 1
+  pr_photo_name: MyString
+  pr_create_from: MyString
+  pr_create_date: 2012-02-14
+  pr_create_by: MyString
+  pr_modify_date: 2012-02-14
+  pr_modify_by: MyString
+  pr_del_by: MyString
+  pr_del_date: 2012-02-14
+  pr_del_flg: MyString

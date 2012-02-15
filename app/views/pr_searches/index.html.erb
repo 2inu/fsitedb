@@ -1,0 +1,35 @@
+<% title "Pr Searches" %>
+
+<table>
+  <tr>
+    <th>Manufacturer</th>
+    <th>Group</th>
+    <th>Category</th>
+    <th>Model</th>
+    <th>Os1</th>
+    <th>Os2</th>
+    <th>Os3</th>
+    <th>District</th>
+    <th>Panchayat</th>
+    <th>Place</th>
+  </tr>
+  <% for pr_search in @pr_searches %>
+    <tr>
+      <td><%= pr_search.manufacturer %></td>
+      <td><%= pr_search.group %></td>
+      <td><%= pr_search.category %></td>
+      <td><%= pr_search.model %></td>
+      <td><%= pr_search.os1 %></td>
+      <td><%= pr_search.os2 %></td>
+      <td><%= pr_search.os3 %></td>
+      <td><%= pr_search.district %></td>
+      <td><%= pr_search.panchayat %></td>
+      <td><%= pr_search.place %></td>
+      <td><%= link_to "Show", pr_search %></td>
+      <td><%= link_to "Edit", edit_pr_search_path(pr_search) %></td>
+      <td><%= link_to "Destroy", pr_search, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Pr Search", new_pr_search_path %></p>

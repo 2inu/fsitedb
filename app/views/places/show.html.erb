@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pl place:</b>
+  <%= @place.pl_place_id %>
+</p>
+
+<p>
+  <b>Pl place cd:</b>
+  <%= @place.pl_place_cd %>
+</p>
+
+<p>
+  <b>Pl name:</b>
+  <%= @place.pl_name %>
+</p>
+
+<p>
+  <b>Pl panchayat:</b>
+  <%= @place.pl_panchayat_id %>
+</p>
+
+<p>
+  <b>Pl dist:</b>
+  <%= @place.pl_dist_id %>
+</p>
+
+<p>
+  <b>Pl create from:</b>
+  <%= @place.pl_create_from %>
+</p>
+
+<p>
+  <b>Pl create date:</b>
+  <%= @place.pl_create_date %>
+</p>
+
+<p>
+  <b>Pl create by:</b>
+  <%= @place.pl_create_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_place_path(@place) %> |
+<%= link_to 'Back', places_path %>

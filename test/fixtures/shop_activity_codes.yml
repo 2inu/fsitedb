@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ac_actvty_id: 
+  ac_actvty_cd: MyString
+  ac_desc: MyString
+  ac_create_from: MyString
+  ac_create_date: 2012-02-14
+  ac_create_by: MyString
+
+two:
+  ac_actvty_id: 
+  ac_actvty_cd: MyString
+  ac_desc: MyString
+  ac_create_from: MyString
+  ac_create_date: 2012-02-14
+  ac_create_by: MyString

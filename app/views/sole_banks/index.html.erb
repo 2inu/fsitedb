@@ -1,0 +1,31 @@
+<h1>Listing sole_banks</h1>
+
+<table>
+  <tr>
+    <th>Ba bank cd</th>
+    <th>Ba bank name</th>
+    <th>Ba create from</th>
+    <th>Ba create date</th>
+    <th>Ba create by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sole_banks.each do |sole_bank| %>
+  <tr>
+    <td><%= sole_bank.ba_bank_cd %></td>
+    <td><%= sole_bank.ba_bank_name %></td>
+    <td><%= sole_bank.ba_create_from %></td>
+    <td><%= sole_bank.ba_create_date %></td>
+    <td><%= sole_bank.ba_create_by %></td>
+    <td><%= link_to 'Show', sole_bank %></td>
+    <td><%= link_to 'Edit', edit_sole_bank_path(sole_bank) %></td>
+    <td><%= link_to 'Destroy', sole_bank, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sole bank', new_sole_bank_path %>

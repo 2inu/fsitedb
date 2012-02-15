@@ -1,0 +1,57 @@
+<%= form_for(@product_shop) do |f| %>
+  <% if @product_shop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product_shop.errors.count, "error") %> prohibited this product_shop from being saved:</h2>
+
+      <ul>
+      <% @product_shop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ps_pr_code %><br />
+    <%= f.text_field :ps_pr_code %>
+  </div>
+  <div class="field">
+    <%= f.label :ps_shop_cd %><br />
+    <%= f.text_field :ps_shop_cd %>
+  </div>
+  <div class="field">
+    <%= f.label :ps_create_from %><br />
+    <%= f.text_field :ps_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :ps_create_date %><br />
+    <%= f.date_select :ps_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :ps_create_by %><br />
+    <%= f.text_field :ps_create_by %>
+  </div>
+  <div class="field">
+    <%= f.label :ps_modify_date %><br />
+    <%= f.date_select :ps_modify_date %>
+  </div>
+  <div class="field">
+    <%= f.label :ps_modify_by %><br />
+    <%= f.text_field :ps_modify_by %>
+  </div>
+  <div class="field">
+    <%= f.label :ps_del_by %><br />
+    <%= f.text_field :ps_del_by %>
+  </div>
+  <div class="field">
+    <%= f.label :ps_del_date %><br />
+    <%= f.date_select :ps_del_date %>
+  </div>
+  <div class="field">
+    <%= f.label :ps_del_flg %><br />
+    <%= f.text_field :ps_del_flg %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

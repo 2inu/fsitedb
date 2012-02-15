@@ -1,0 +1,37 @@
+<h1>Listing panchayats</h1>
+
+<table>
+  <tr>
+    <th>Pa panchayat</th>
+    <th>Pa panchayat cd</th>
+    <th>Pa name</th>
+    <th>Pa dist</th>
+    <th>Pa panchayat type</th>
+    <th>Pa create from</th>
+    <th>Pa create date</th>
+    <th>Pa create by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @panchayats.each do |panchayat| %>
+  <tr>
+    <td><%= panchayat.pa_panchayat_id %></td>
+    <td><%= panchayat.pa_panchayat_cd %></td>
+    <td><%= panchayat.pa_name %></td>
+    <td><%= panchayat.pa_dist_id %></td>
+    <td><%= panchayat.pa_panchayat_type %></td>
+    <td><%= panchayat.pa_create_from %></td>
+    <td><%= panchayat.pa_create_date %></td>
+    <td><%= panchayat.pa_create_by %></td>
+    <td><%= link_to 'Show', panchayat %></td>
+    <td><%= link_to 'Edit', edit_panchayat_path(panchayat) %></td>
+    <td><%= link_to 'Destroy', panchayat, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Panchayat', new_panchayat_path %>

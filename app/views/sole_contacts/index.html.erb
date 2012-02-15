@@ -1,0 +1,71 @@
+<h1>Listing sole_contacts</h1>
+
+<table>
+  <tr>
+    <th>So sole</th>
+    <th>So sole cd</th>
+    <th>So shop</th>
+    <th>So type</th>
+    <th>So first name</th>
+    <th>So nick name</th>
+    <th>So name in</th>
+    <th>So name in bank ac</th>
+    <th>So father name</th>
+    <th>So family name</th>
+    <th>So mobile</th>
+    <th>So email</th>
+    <th>So photo</th>
+    <th>So photo name</th>
+    <th>So pro flg</th>
+    <th>So bank name cd</th>
+    <th>So id type</th>
+    <th>So create from</th>
+    <th>So create date</th>
+    <th>So create by</th>
+    <th>So modify date</th>
+    <th>So modify by</th>
+    <th>So del by</th>
+    <th>So del date</th>
+    <th>So del flg</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sole_contacts.each do |sole_contact| %>
+  <tr>
+    <td><%= sole_contact.so_sole_id %></td>
+    <td><%= sole_contact.so_sole_cd %></td>
+    <td><%= sole_contact.so_shop_id %></td>
+    <td><%= sole_contact.so_type %></td>
+    <td><%= sole_contact.so_first_name %></td>
+    <td><%= sole_contact.so_nick_name %></td>
+    <td><%= sole_contact.so_name_in_id %></td>
+    <td><%= sole_contact.so_name_in_bank_ac %></td>
+    <td><%= sole_contact.so_father_name %></td>
+    <td><%= sole_contact.so_family_name %></td>
+    <td><%= sole_contact.so_mobile %></td>
+    <td><%= sole_contact.so_email_id %></td>
+    <td><%= sole_contact.so_photo_id %></td>
+    <td><%= sole_contact.so_photo_name %></td>
+    <td><%= sole_contact.so_pro_flg %></td>
+    <td><%= sole_contact.so_bank_name_cd %></td>
+    <td><%= sole_contact.so_id_type %></td>
+    <td><%= sole_contact.so_create_from %></td>
+    <td><%= sole_contact.so_create_date %></td>
+    <td><%= sole_contact.so_create_by %></td>
+    <td><%= sole_contact.so_modify_date %></td>
+    <td><%= sole_contact.so_modify_by %></td>
+    <td><%= sole_contact.so_del_by %></td>
+    <td><%= sole_contact.so_del_date %></td>
+    <td><%= sole_contact.so_del_flg %></td>
+    <td><%= link_to 'Show', sole_contact %></td>
+    <td><%= link_to 'Edit', edit_sole_contact_path(sole_contact) %></td>
+    <td><%= link_to 'Destroy', sole_contact, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sole contact', new_sole_contact_path %>

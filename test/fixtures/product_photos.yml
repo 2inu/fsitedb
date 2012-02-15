@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pp_id: 
+  pp_pr_id: 1
+  pp_name: MyString
+  pp_create_from: MyString
+  pp_create_date: 2012-02-14
+  pp_create_by: MyString
+  pp_modify_date: 2012-02-14
+  pp_modify_by: MyString
+  pp_del_by: MyString
+  pp_del_date: 2012-02-14
+  pp_del_flg: MyString
+
+two:
+  pp_id: 
+  pp_pr_id: 1
+  pp_name: MyString
+  pp_create_from: MyString
+  pp_create_date: 2012-02-14
+  pp_create_by: MyString
+  pp_modify_date: 2012-02-14
+  pp_modify_by: MyString
+  pp_del_by: MyString
+  pp_del_date: 2012-02-14
+  pp_del_flg: MyString

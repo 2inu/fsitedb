@@ -1,0 +1,2 @@
+module PrSearchesHelper
+end

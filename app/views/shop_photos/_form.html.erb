@@ -1,0 +1,41 @@
+<%= form_for(@shop_photo) do |f| %>
+  <% if @shop_photo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@shop_photo.errors.count, "error") %> prohibited this shop_photo from being saved:</h2>
+
+      <ul>
+      <% @shop_photo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ph_id %><br />
+    <%= f.text_field :ph_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ph_shop_id %><br />
+    <%= f.number_field :ph_shop_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ph_name %><br />
+    <%= f.text_field :ph_name %>
+  </div>
+  <div class="field">
+    <%= f.label :ph_create_from %><br />
+    <%= f.text_field :ph_create_from %>
+  </div>
+  <div class="field">
+    <%= f.label :ph_create_date %><br />
+    <%= f.date_select :ph_create_date %>
+  </div>
+  <div class="field">
+    <%= f.label :ph_create_by %><br />
+    <%= f.text_field :ph_create_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
