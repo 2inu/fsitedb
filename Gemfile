@@ -9,7 +9,7 @@ gem 'pg'
 gem 'mysql2'
 gem 'json'
 gem 'nifty-generators',:group => :development
-
+gem 'paperclip'
 
 # Gems used only for assets and not required
 # in production environments by default.
